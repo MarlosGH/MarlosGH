@@ -1,58 +1,38 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="StyleSheet" type="text/css" href="styles.css">
 	<title>MarlosWeb</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script src="https://kit.fontawesome.com/a8192839c1.js" crossorigin="anonymous"></script>
 </head>
 <body>
-	<div class="Cabeza">
-		<h1 class="Cabeza_titulo">Marlos</h1>
-	</div>
-	<div class="options_buttons">
-		<a href="" class="options_buttons-modpacks">Modpacks</a>
-		<a href="" class="options_buttons-Plugins">Plugins</a>
-		<a href="" class="options_buttons-mods">Mods</a>
-		<a href="" class="options_buttons-Servidores">Servidores</a>
-	</div>
-
-	 <img src="Imagen1.png" class="Portada_inicio">
-
-	<div class="Projects">
-		<div class="Projects_Titulo">
-			Proyectos
-		</div>
-	 <div class="Projects_Containers">
-			<div class="Projects_Modpacks">
-			  <h2 class="Projects_Modpacks-titulo">Modpacks</h2>
-			  <img src="Logo_Modpacks.png" class="Projects_Modpacks-logo" alt="Logo de modpaks">
-			  <p class="Projects_Modpacks-description">Aqui estan los Modpacks!</p>
-			  <a href="modpacks.html" class="Projects_Modpacks-Boton">Ir</a>
-		    </div>
-
-		    <div class="Projects_Plugins">
-			  <h2 class="Projects_Plugins-titulo">Plugins</h2>
-			  <img src="Logo_Spigot.png" class="Projects_Plugins-logo">
-			  <p class="Projects_Plugins-description">Aqui estan los plugins!</p>
-			  <a href="" class="Projects_Plugins-Boton">Ir</a>
-		    </div>
-
-		    <div class="Projects_Mods">
-			  <h2 class="Projects_Mods-Titulo">Mods</h2>
-			  <img src="Logo_Mods.png" class="Projects_Mods-logo">
-			  <p class="Projects_Mods-description">Aqui estan los mods!</p>
-			  <a href="" class="Projects_Mods-Boton">Ir</a>
-		    </div>
-		    
-		   <div class="Projects_Servidores">
-			  <h2 class="Projects_Servidores-Titulo">Servidores</h2>
-			  <img src="Logo_Servidores.png" class="Projects_Servidores-Logo">
-			  <p class="Projects_Servidores-Description">Aqui estan los servidores!</p>
-			  <a href="" class="Projects_Servidores-Boton">Ir</a>
-		   </div>
-		</div>
-	</div>
+  <header class="header">
+    <h1 class="header_titulo">MARLOS</h1>
+    <p class="header_parrafo">¡Bienvenido!</p>
+  </header>
+  <main class="options">
+    <a href="Mods" class="options_button">Apps</a>
+    <a href="Plugins" class="options_button">Networks</a>
+  </main>
+  <div class="Portada_img">
+    <img src="src/Portada_2.jpg">
+  </div>
+  <div class="secciones">
+    <div class="secciones_mods">
+      <h2 class="secciones_mods-titulo">MINECRAFT - Mods</h2>
+      <img src="src/Mods.png" class="secciones_mods-img">
+      <a href="Mods" class="secciones_button">+Info</a>
+    </div>
+    
+    <div class="secciones_plugins">
+      <h2 class="secciones_plugins-titulo">MINECRAFT - Plugins</h2>
+      <img src="src/Spigot.png" class="secciones_plugins-img">
+      <a href="Mods" class="secciones_button-pl">+Info</a>
+    </div>
+  </div>
+  <script src="main.js"></script>
 </body>
 </html>
