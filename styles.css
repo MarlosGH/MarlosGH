@@ -1,123 +1,74 @@
-*{
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+
+body {
+  background: #06BDC1;
+  background: -webkit-radial-gradient(center, #06BDC1, #68469F);
+  background: -moz-radial-gradient(center, #06BDC1, #68469F);
+  background: radial-gradient(ellipse at center, #06BDC1, #68469F);
 }
-body{
-  background: #2E2D2D;
+
+.app {
+  width: 1280px;
+  margin: auto;
 }
-.header {
-  background-image: url("src/Portada.jpg");
-  color: #fff;
-}
-.header_titulo{
-  text-align: center;
-  padding: 10px;
-  font-family: georgia;
-  padding-bottom: 5px;
-}
-.header_parrafo{
-  text-align: center;
-  padding-bottom: 10px;
-}
-.options{
-  background: #1E1D1D;
-  width: 100%;
+
+.quotes-container {
   display: flex;
-  justify-content: space-around;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 100vh;
 }
-.options_button{
-  margin: 13px 0px;
-  text-decoration: none;
-  color: #fff;
-  background: #2E2D2D;
-  padding: 6px 40px;
-  transition: .9s;
-}
-.options_button:hover{
-  color: orange;
-  background: #4F4F52;
-}
-.Portada_img{
-  width: 100%;
-  height: 350px;
-}
-.Portada_img img{
-  width: 100%;
-  height: 100%;
-}
-.secciones{
+
+.inner-quotes-container {
   display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
-}
-.secciones_mods{
-  width: 45%;
-  background: #514E4E;
-  margin-top: 40px;
-  border-radius: 5px;
-}
-.secciones_mods-titulo{
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 900px;
   text-align: center;
-  color: #fff;
-  margin-top: 13px;
-  font-size: 21px;
+  min-height: 400px;
+  padding: 0 25px;
+  color: gray;
+  border-radius: 10px;
+  background-color: #F4EDEA;
+  border: 10px solid #06BDC1;
+  box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.9);
 }
-.secciones_mods-img{
-  width: 50%;
-  position: relative;
-  left: 24%;
-  margin-bottom: 45px;
+
+.inner-quotes-container p {
+  font-size: 1.5rem;
+  color: black;
 }
-.secciones_button{
-  text-decoration: none;
-  color: #fff;
-  font-size: 20px;
-  background: dimgrey;
-  padding: 10px 30px;
-  text-decoration: center;
-  border-radius: 5px;
-  position: relative;
-  right: 22%;
-  bottom: 10%;
-  transition: all 1s;
+
+.inner-quotes-container h3 {
+  font-size: 2rem;
+  color: black;
+  font-family: 'Dancing Script', cursive;
 }
-.secciones_button:hover{
-  border-radius: 5px;
-  color: orange;
+
+.quote-btn {
+  padding-top: 25px;
 }
-.secciones_plugins {
-  width: 45%;
-  background: #514E4E;
-  margin-top: 40px;
-  border-radius: 5px;
+
+@media(max-width:1280px) {
+  .container {
+    width: 95%;
+  }
 }
-.secciones_plugins-titulo{
-  text-align: center;
-  color: #fff;
-  margin-top: 13px;
-  font-size: 21px;
+
+@media(max-width:900px) {
+  .inner-quotes-container {
+    width: 100%;
+  }
 }
-.secciones_plugins-img{
-  width: 50%;
-  position: relative;
-  left: 24%;
-  margin-bottom: 45px;
-}
-.secciones_button-pl{
-  text-decoration: none;
-  color: #fff;
-  font-size: 20px;
-  background: dimgrey;
-  padding: 10px 30px;
-  text-decoration: center;
-  border-radius: 5px;
-  position: relative;
-  right: 22%;
-  bottom: 10%;
-  transition: all 1s;
-}
-.secciones_button-pl:hover{
-  border-radius: 5px;
-  color: orange;
+
+@media(max-width:480px) {
+  .inner-quotes-container p {
+    font-size: 1.2rem;
+  }
+
+  .inner-quotes-container h3 {
+    font-size: 1.5rem;
+  }
 }
