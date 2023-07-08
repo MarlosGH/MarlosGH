@@ -1,30 +1,61 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="es">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-  <link rel="shortcut icon" type="image/png" href="quote.png" />
   <link rel="stylesheet" href="style.css">
-  <title>Para ti<3</title>
+  <link rel="stylesheet" href="fontm.css">
+  <script src="https://kit.fontawesome.com/a8192839c1.js" crossorigin="anonymous"></script>
+  <title>Minecraft Proyects</title>
+  <link rel="icon" href="imgs/icon.png">
 </head>
-
 <body>
-
-  <main class="app">
-    <div class="quotes-container">
-      <div class="inner-quotes-container">
-        <p id="quote">dd</p>
-        <h3 id="author">ddsd</h3>
+  <nav class="nav">
+    <i class="fa-solid fa-x"></i>
+    <div class="conten-navs-childs">
+      <div class="logo-imgT">
+        <a href="index.html"><img src="imgs/icon.png" alt="Logo" class="lg-"></a>
+        <p class="title- p">Minecraft <br>Proyect</p>
       </div>
-      <div class="quote-btn">
-        <button class="btn btn-info" id="generate">Click aqui</button>
+  
+      <div class="ul-navbar">
+        <ul>
+          <li><a class="a- view" href="index.html">Inicio</a></li>
+          <li><a class="a-" href="views/plugins.html">Plugins</a></li>
+        </ul>
       </div>
     </div>
-  </main>
+  </nav>
 
-  <script src="main.js"></script>
+  <div class="main-window">
+    <header class="header-">
+      <i class="fa-solid fa-bars"></i>
+      <img src="imgs/icon.png" class="responsive-icon">
+      <p class="responsive-title">MinecraftProyect</p>
+    </header>
+    <section class="s1">
+      <div>
+          <h2 class="title-">Bienvenidos a MinecraftProyect!</h2>      
+          <p class="title- p">Aqui podras descargar y tener cada proyecto <br> hecho por mi</p>
+      </div>
+    </section>
+    <main>
+      <h2 class="black shadow">Proyectos</h2>
+      <div class="grid-">
+        <a href="views/plugins.html">
+          <div class="coten-d">
+            <div class="conten--title">
+              <i class="fa-solid fa-puzzle-piece icon"></i>
+              <h2 class="conte--name">Plugins</h2>
+            </div>
+            <p class="conten-p">Plugins hechos para <br>servidores como  minijuegos <br> Survivals Extremos</p>
+          </div>
+        </a>
+      </div>
+    </main>
+  </div>
+  <script src="scripts/main.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script src="scripts/sweetalert.js"></script>
 </body>
-
 </html>
