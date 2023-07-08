@@ -1,0 +1,68 @@
+.search-conten{
+    display: flex;
+    justify-content: center;
+}
+.title--{
+    text-align: center;
+}
+.search{
+    outline: none;
+    font-size: 20px;
+    font-family: 'Courier New', Courier, monospace;
+    padding: 5px 10px 5px 10px;
+    border: 2px solid rgb(43, 42, 42);
+    border-radius: 5px;
+}
+.pplugins-public{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.pl-public-{
+    background-color: var(--fondos);
+    margin: 20px;
+    padding: 5px;
+    border: 2px solid black;
+    border-radius: 10px;
+    max-width: 280px;
+}
+.img-conten-pl{
+    display: flex;
+    justify-content: center;
+}
+.pl-public-img{
+    margin: 3px;
+    min-width: 80%;
+    min-height: 159px;
+}
+.pl-public-t{
+    color: white;
+    font-family: Minecraftia;
+    font-size: 18px;
+    display: inline-block;
+}
+.pl-public-p{
+    color: white;
+    font-family: Minecraftia;
+    font-size: 12px;
+}
+.url-{
+    color: white;
+}
+.conten-button{
+    margin: 10px 10px 5px 10px;
+    display: flex;
+    justify-content: center;
+}
+.button-{
+    font-size: 18px;
+    font-family: Minecraftia;
+    padding: 3px 5px 3px 5px;
+    cursor: pointer;
+    border: 2px solid black;
+    border-radius: 5px;
+    background-color: rgb(160, 160, 160);
+}
+.filtro{
+    display: none;
+}
