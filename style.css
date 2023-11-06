@@ -1,0 +1,212 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+b{
+    color: rgba(170, 170, 170, 0.856);
+}
+.relleno{
+    width: 100%;
+    background-color: black;
+    height: 70px;
+    position: relative;
+}
+.nav{
+    display: none;
+}
+/* ENCABEZADO DE LA WEB */
+.header{
+    z-index: 10;
+    display: flex;
+    background-color: black;
+    color: white;
+    align-items: center;
+    padding: 10px;
+    justify-content: space-between;
+    position: fixed;
+    width: 100%;
+}
+.imgLogo{
+    width: 50px;
+}
+.Img-title{
+    font-size: 25px;
+    color: white;
+}
+.imgConten{
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
+}
+ul{
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: 15px;
+}
+a{
+    text-decoration: none;
+}
+.li-{
+    color: white;
+    text-decoration: none;
+    list-style: none;
+    padding: 10px;
+    font-size: 15px;
+}
+/* ENCABEZADO DE LA WEB */
+
+/* ZONA PRINCIPAL DE LA WEB */
+main{
+    width: 100%;
+    background-image: url('imgs/background.gif');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.title-presentacion{
+    text-align: center;
+    color: white;
+    font-size: 50px;
+    padding-top: 40px;
+}
+.descrip-presentacion{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    text-align: center;
+    color: white;
+}
+/* ZONA PRINCIPAL DE LA WEB */
+
+/* SECCION "SOBRE MI" DE LA WEB */
+#sobre-mi{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 25px;
+}
+.conten-biografia{
+    display: inline-block;
+    width: 60%;
+}
+.name{
+    font-size: 30px;
+    padding: 10px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.descrip-bio{
+    text-align: center;
+}
+/* SECCION "SOBRE MI" DE LA WEB */
+
+/* SECCION "PLUGINS" DE LA WEB */
+#plugins{
+    margin-bottom: 25px;
+    padding: 50px;
+}
+.grd-up{
+    display: grid;
+    grid-template-columns: repeat(4, 150px);
+    justify-content: center;    
+    gap: 100px;
+}
+.conten-pb{
+    cursor: pointer;
+    transition: all .4s;
+}
+.conten-pb:hover{
+    transform: scale(1.1);
+}
+.name-pb{
+    padding: 5px;
+    color: rgb(77, 77, 77);
+    font-size: 20px;
+}
+.img-pb{
+    height: 150px;
+}
+.descrip-pb{
+    text-align: center;
+}
+.conten-pb-quest{
+    display: inline-block;
+    margin-top: 15px;
+}
+@media screen and (max-width: 952px){
+    .grd-up{
+        display: grid;
+        grid-template-columns: repeat(2, 150px);
+        justify-content: center;    
+        gap: 100px;
+    }
+}
+@media screen and (max-width: 768px){
+    .header{
+        display: none;
+    }
+    .relleno{
+        height: 30px;
+    }
+    .header-media{
+        position: fixed;
+        z-index: 10;
+        background-color: black;
+        width: 100%;
+        height: 30px;
+    }
+    .fa-bars{
+        color: white;
+        margin: 10px;
+        transition: translate 2s;
+    }
+    .nav{
+        display: none;
+        position: fixed;
+        background-color: rgb(19, 19, 19);
+        width: 50%;
+        height: 100%;
+        z-index: 10;
+    }
+    .conten-pres{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 20px 0;
+    }
+    .ul-pres{
+        display: flex;
+        justify-content:left;
+        margin-left: 50px;
+        margin-top: 80px;
+    }
+}
+
+.shadow-{
+    display: none;
+}
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(180deg);
+    }
+}
+@keyframes desaparecer {
+    0% {
+        height: 30px;
+    }
+    100% {
+        height: 0px;
+    }
+}
+@keyframes aparecer{
+    0%{
+        width: 0;
+    }
+    100%{
+        width: 50%;
+    }
+}
