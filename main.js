@@ -1,23 +1,55 @@
-document.getElementById("buttonVerInfo").addEventListener("click", function() {
-    let sobreMiSection = document.getElementById("sobre-mi");
-    sobreMiSection.scrollIntoView({ behavior: "smooth" });
-});
+document.addEventListener("DOMContentLoaded", function() {
+
 let header = document.querySelector(".header-media");
 let relleno = document.querySelector(".relleno")
-document.querySelector(".fa-bars").addEventListener("click", (e)=>{
+let faBars = document.querySelector(".fa-bars")
+let nav = document.querySelector(".nav")
+let navAbierto = false;
+let abriendoNav = false;
+
+document.querySelector(".fa-bars").addEventListener("click", abrir)
+document.querySelector(".fa-x").addEventListener("click", cerrar)
+
+function abrir(e){
+    abriendoNav = true;
     e.target.style.animation = "none";
     void e.target.offsetWidth;
-    e.target.style.animation = "rotate 2s linear";
-    e.target.style.translate = "0 -30px"
-    relleno.style.animation = "desaparecer 2s";
-    header.style.animation = "desaparecer 2s";
-    document.querySelector(".nav").style.animation= "normal fadeInLeft 1s"
-    setInterval(function(){
+    e.target.style.animation = "rotate 4s linear";
+    relleno.style.animation = "fadeOutUp 3s";
+    header.style.animation = "fadeOutUp 3s";
+    nav.style.animation= "normal fadeInLeft 1s"
+    
+    setTimeout(function(){
         relleno.classList.add("shadow-")
         header.classList.add("shadow-")
-        header.style.animation = "none"
-        relleno.style.animation = "none"
-        document.querySelector(".nav").style.display = "block"
+        nav.style.display = "block"
+        relleno.classList.remove("visible")
+        header.classList.remove("visible")
+        navAbierto = true;
+        abriendoNav = false;
     },2000)
+}
+function cerrar(e){
+    cerrandoNav = true;
+    nav.style.animation = "normal fadeOutLeft 2s"
+    relleno.style.animation = "none";
+    header.style.animation = "none";
+    header.style.animation = "fadeInDown 2s"
+    relleno.style.animation = "fadeInDown 2s"
+    relleno.classList.remove("shadow-")
+    header.classList.remove("shadow-")
+    relleno.classList.add("visible")
+    header.classList.add("visible")
+    
+    setTimeout( function(){
+        nav.style.display = "none"
+        nav.style.animation = "none"
+        navAbierto = false;
+    }, 2000);
+}
+
+document.querySelector("body").addEventListener("click", (e)=>{
+    if(nav.style.display = "block" && navAbierto)cerrar();
 })
 
+});
