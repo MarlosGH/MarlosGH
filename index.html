@@ -32,6 +32,7 @@
         <div class="relleno"></div>
      <!--ENCABEZADO DE LA PAGINA WEB-->
     <nav class="nav">
+        <i class="fa-solid fa-x"></i>
         <div class="conten-pres">
             <img class="imgLogo" src="https://gamepedia.cursecdn.com/minecraft_br_gamepedia/6/65/Esponja.png?version=223435aca626e2fa61b936baa2d8e98b">
             <h3 class="Img-title">Marlos<b>Web</b></h3>
@@ -48,8 +49,11 @@
     <main>
         <h1 class="title-presentacion">¡Bienvenidos!</h1>
         <p class="descrip-presentacion">Bienvenido a mi espacio en línea donde comparto proyectos personales,<br> experiencias y pasiones. Aquí encontrarás una variedad de contenido relacionado con mis intereses y creatividad.</p>    
-        <div class="conten-button">
+        <div class="conten-button conten-button-1">
             <button class="glow-on-hover" id="buttonVerInfo" type="button" href="#sobre-mi">Ver Sobre mi</button>
+        </div>
+        <div class="conten-button conten-button-2">
+            <button class="glow-on-hover" id="buttonVerInfo" type="button">Ver Sobre mi</button>
         </div>
         <div style="height: 150px; overflow: hidden;" ><svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;"><path d="M-5.22,-1.39 C250.98,95.20 262.26,95.20 498.72,-0.40 L500.00,149.82 L-0.00,149.82 Z" style="stroke: none; fill: #fff;"></path></svg></div>
     </main>
@@ -65,6 +69,13 @@
             <p class="descrip-bio">Desde que descubrí el mundo de la programación, he estado inmerso en la creación de soluciones para mejorar la experiencia de juego en Minecraft. Mi amor por la programación y la comunidad de Minecraft me ha llevado a desarrollar proyectos creativos y emocionantes que contribuyen a esta comunidad en constante crecimiento. Este sitio web es mi plataforma para compartir mis creaciones, experiencias y descubrimientos en el mundo del desarrollo web y la programación para Minecraft. Aquí encontrarás una variedad de recursos y proyectos que espero que sean útiles y emocionantes para otros entusiastas como yo.</p>
             <br>
             <p class="descrip-bio">Me encanta aprender y enfrentar desafíos constantes en este emocionante campo. Gracias por unirte a mí en mi viaje de desarrollo web y aventuras en el mundo de Minecraft. ¡Espero que disfrutes explorando mis proyectos y descubriendo todo lo que tengo para compartir!</p>
+        </div>
+    </section>
+    <section id="sobre-mi-e">
+        <img style="height: 250px;" src="https://th.bing.com/th/id/OIP.XzK52JfdQh-qu469PdFBSAHaHa?pid=ImgDet&w=512&h=512&rs=1" alt="" class="img-fotocheck">
+        <div class="conten-biografia">
+            <h2 class="name">Marlos</h2>
+            <p class="descrip-bio">Soy un apasionado estudiante de desarrollo web y programador. Mi enfoque principal <br> se centra en la creación de sitios web y plugins para Minecraft. Me encuentro en la etapa <br>de aprendizaje y mi meta es especializarme en el desarrollo de plugins para servidores de supervivencia y modos de juego en Minecraft. Me estoy preparando activamente para trabajar como desarrollador web y programador, adquiriendo conocimientos y experiencia en el campo.</p>
         </div>
     </section>
     <!--SECCION DE "SOBRE MI"-->
@@ -99,5 +110,10 @@
         </div>
     </section>
     <script src="main.js"></script>
+    <script>
+        document.querySelector(".conten-button-2").addEventListener("click", function(){
+        window.location.href = "views/sobremi.html"
+        })
+    </script>
 </body>
 </html>
